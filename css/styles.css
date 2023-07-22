@@ -1,0 +1,67 @@
+/* Common class */
+body {
+  width: 100%;
+  max-width: 2560px;
+  font-family: mr;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 13px;
+  color: #1f3d3d;
+  letter-spacing: -0.4px;
+}
+.container {
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+/* Header */
+.header {
+  height: 94px;
+}
+.header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .header__menu {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header .header__logo {
+  display: flex;
+}
+.header .header__menu li a {
+  text-decoration: none;
+  padding: 0 17px;
+}
+.header .header__menu li a:hover {
+  color: yellow;
+}
+.header .header__cta {
+  display: flex;
+}
+.header .header__cta .header__cta-btn {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 22px;
+  border-radius: 5px;
+  height: 40px;
+  background: yellow;
+}
+.header .header__cta .header__cta-btn:hover {
+  background: red;
+}
+.header .header__cta .header__cta-btn.--btn-transparent {
+  background: none;
+}
+.header .header__cta .header__cta-btn.--btn-transparent:hover {
+  color: yellow;
+}
