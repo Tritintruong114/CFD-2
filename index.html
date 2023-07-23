@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- Header Section -->
     <header class="header">
       <div class="container">
         <a href="./" class="header__logo">
@@ -60,5 +61,47 @@
         </div>
       </div>
     </header>
+    <!-- Hero Section -->
+    <section class="schero">
+      <div class="container">
+        <div class="schero__text">
+          <h1 class="heading">
+            Find Your New <br />
+            Modern Apartment
+          </h1>
+          <div class="schero__text-search">
+            <div class="inputsearch">
+              <i><img srcset="img/search-icon.png 2x" alt="" /></i>
+              <input type="text" placeholder="Search Locations" />
+            </div>
+            <div class="btnsearch">Search</div>
+          </div>
+        </div>
+        <div class="schero__scroll">
+          <i><img srcset="img/scroll-down.png 2x" alt="arow-down" /></i>
+          <span>Scroll Down</span>
+        </div>
+        <div class="schero__contact">
+          <a href="0385611407" class="schero__contact-item">
+            <i><img srcset="img/phone-icon@2x.png 2x" alt="phone" /></i>
+            <span>(000) 123-4567</span>
+          </a>
+          <a
+            target="_blank"
+            href="https://goo.gl/maps/poatrdycn8PDcDvW6"
+            class="schero__contact-item"
+          >
+            <i><img srcset="img/location-icon.png 2x" alt="phone" /></i>
+            <span>(000) 123-4567</span>
+          </a>
+        </div>
+      </div>
+      <picture class="schero__img">
+        <source
+          media="(max-width:992px)"
+          srcset="img/hero-banner-luxestate.jpg" />
+        <img src="img/hero-banner-luxestate.jpg" alt=""
+      /></picture>
+    </section>
   </body>
 </html>

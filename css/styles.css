@@ -1,3 +1,19 @@
+/* varibles */
+html {
+  --blue-cl: #1f373d;
+  --blue-light-cl: #919eb1;
+  --yellow-cl: #ffcc01;
+  --yellow-hover-cl: #ffe16a;
+  --time-transition: 0.4s;
+  --height-header: 80px;
+
+  /* Font size */
+  --fs-c1: 62px;
+  --fs-special: 100px;
+  --fs-c2: 40px;
+  --fs-c3: 25px;
+}
+
 /* Common class */
 body {
   width: 100%;
@@ -6,8 +22,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-size: 13px;
+  line-height: 30px;
   color: #1f3d3d;
   letter-spacing: -0.4px;
+}
+img {
+  max-width: 100%;
 }
 .container {
   max-width: 1140px;
@@ -39,29 +59,162 @@ body {
 .header .header__menu li a {
   text-decoration: none;
   padding: 0 17px;
+  color: var(--blue-cl);
+  transition: var(--time-transition);
+  -webkit-transition: var(--time-transition);
+  -o-transition: var(--time-transition);
 }
 .header .header__menu li a:hover {
-  color: yellow;
+  color: var(--yellow-cl);
 }
 .header .header__cta {
   display: flex;
 }
 .header .header__cta .header__cta-btn {
   text-decoration: none;
+  line-height: normal;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 22px;
   border-radius: 5px;
   height: 40px;
-  background: yellow;
+  background: var(--yellow-cl);
+  color: var(--blue-cl);
+  transition: var(--time-transition);
+  -webkit-transition: var(--time-transition);
+  -o-transition: var(--time-transition);
 }
 .header .header__cta .header__cta-btn:hover {
-  background: red;
+  background: var(--yellow-hover-cl);
 }
 .header .header__cta .header__cta-btn.--btn-transparent {
   background: none;
 }
 .header .header__cta .header__cta-btn.--btn-transparent:hover {
-  color: yellow;
+  color: var(--yellow-cl);
+}
+
+/* Hero */
+.schero {
+  height: calc(100vh - var(--height-header));
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.schero .container {
+  z-index: 2;
+  height: 100%;
+}
+.schero .schero__text .heading {
+  font-size: var(--fs-c1);
+  font-family: mb;
+  color: var(--blue-cl);
+  line-height: 78px;
+  letter-spacing: -0.4px;
+  margin-bottom: 41px;
+}
+.schero .schero__text .schero__text-search {
+  display: flex;
+  align-items: center;
+  height: 68px;
+}
+.schero .schero__text .schero__text-search .inputsearch {
+  height: 100%;
+  position: relative;
+}
+.schero .schero__text .schero__text-search .inputsearch i {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 27px;
+  transform: translateY(-50%);
+}
+.schero .schero__text .schero__text-search .inputsearch input {
+  width: 366px;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: 0;
+  border: 0;
+  padding: 20px 20px 20px 55px;
+  font-family: mr;
+  color: var(--blue-light-cl);
+  font-size: 15px;
+}
+.schero .schero__text .schero__text-search .btnsearch {
+  height: 100%;
+  background: var(--yellow-cl);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: msb;
+  font-size: 15px;
+  cursor: pointer;
+  transition: var(--time-transition);
+  -webkit-transition: var(--time-transition);
+  -o-transition: var(--time-transition);
+}
+.schero .schero__text .schero__text-search .btnsearch:hover {
+  background: var(--yellow-hover-cl);
+}
+.schero .schero__scroll {
+  position: absolute;
+  left: -19px;
+  bottom: 137px;
+  transform: rotate(-90deg);
+  text-align: center;
+  color: #818181;
+}
+.schero .schero__scroll i {
+  display: flex;
+  transform: rotate(90deg);
+  left: -35px;
+  position: absolute;
+}
+.schero .schero__img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.schero .schero__contact {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background: var(--yellow-cl);
+  max-width: fit-content;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  padding: 0 78px;
+}
+.schero .schero__contact .schero__contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.schero .schero__contact .schero__contact-item i {
+  margin-right: 30px;
+  display: flex;
+}
+.schero .schero__contact a {
+  text-decoration: none;
+  color: var(--blue-cl);
+  font-size: 18px;
+  font-family: msb;
+}
+
+.schero .schero__contact .schero__contact-item:first-child {
+  padding-right: 33px;
+}
+.schero .schero__contact .schero__contact-item:last-child {
+  padding-left: 33px;
 }
