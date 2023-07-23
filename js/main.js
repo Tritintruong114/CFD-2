@@ -187,36 +187,36 @@
 // console.log(checkIsPass(scores), "Ex 3.3.6");
 // console.log(checkIsPass(scores2), "Ex 3.3.6");
 
-// const scrollTop = document.querySelector(".btntotop");
-// const headerHeight = document.querySelector(".header");
+const scrollTop = document.querySelector(".btntotop");
+const headerHeight = document.querySelector(".header");
 
-// window.addEventListener("scroll", () => {
-//   let y = window.scrollY;
+window.addEventListener("scroll", () => {
+  let y = window.scrollY;
 
-//   if (y > headerHeight.offsetHeight) {
-//     headerHeight.classList.add("bgGray");
-//   } else {
-//     headerHeight.classList.remove("bgGray");
-//   }
-// });
+  if (y > headerHeight.offsetHeight) {
+    headerHeight.classList.add("bgGray");
+  } else {
+    headerHeight.classList.remove("bgGray");
+  }
+});
 
-// scrollTop.addEventListener("click", () => {
-//   document.body.scrollToTop = 0;
-//   document.documentElement.scrollTop = 0;
-// });
+scrollTop.addEventListener("click", () => {
+  document.body.scrollToTop = 0;
+  document.documentElement.scrollTop = 0;
+});
 
-// window.addEventListener("scroll", () => {
-//   let y = window.scrollY;
-//   let trigger =
-//     document.querySelector("html").offsetHeight -
-//     document.querySelector("footer").offsetHeight;
+window.addEventListener("scroll", () => {
+  let y = window.scrollY;
+  let trigger =
+    document.querySelector("html").offsetHeight -
+    document.querySelector("footer").offsetHeight;
 
-//   if (y + window.innerHeight >= trigger) {
-//     document.querySelector(".btntotop").classList.add("showBtn");
-//   } else {
-//     document.querySelector(".btntotop").classList.remove("showBtn");
-//   }
-// });
+  if (y + window.innerHeight >= trigger) {
+    document.querySelector(".btntotop").classList.add("showBtn");
+  } else {
+    document.querySelector(".btntotop").classList.remove("showBtn");
+  }
+});
 
 //progress
 

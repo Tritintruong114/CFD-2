@@ -79,6 +79,7 @@ time,
 mark,
 audio,
 input,
+select,
 video {
   margin: 0;
   padding: 0;
@@ -126,4 +127,10 @@ table {
 }
 img {
   max-width: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }

@@ -489,7 +489,7 @@
 
     <!-- Get in touch -->
 
-    <section class="scgetintouch">
+    <section class="scgetintouch --gray-bg-cl">
       <div class="scgetintouch__form">
         <div class="textbox">
           <h2 class="heading --h2">Get In Touch</h2>
@@ -502,7 +502,7 @@
              <div class="forminput">
             <input type="text" placeholder="Email">
           </div>
-            <div class="forminput">
+            <div class="forminput formselect">
             <select>
               <option value="VIE">VIE</option>
               <option value="JP">JP</option>
@@ -527,13 +527,84 @@
                 <label for="radio3">Building</label>
               </p>
             </div>
+          </div>  
+                 <div class="forminput">
+            <label class="title">Select the services</label>
+            <div class="checkboxwrap">
+              <p>
+                <input type="checkbox" name="checkbox1" id="checkbox1">
+                <label for="checkbox1">Facebook</label>
+              </p>  <p>
+                <input type="checkbox" name="checkbox2" id="checkbox2">
+                <label for="checkbox2">Email</label>
+              </p>  <p>
+                <input type="checkbox" name="checkbox3" id="checkbox3">
+                <label for="checkbox3">Phone</label>
+              </p>
+            </div>
           </div>
+          <button type="submit" class="btnblue">Send Us</button>
         </form>
       </div>
       <div class="scgetintouch__img">
         <img src="./img/get-in-touch.jpg" alt="getintouch"/>
       </div>
     </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <h2 class="heading --h3 --white-cl">Luxstate <br>
+          Explore Real Estate
+          </h2>
+          <form class="footer__top-search" action="#">
+            <input type="text" placeholder="Subscribe To Our Newsletter"/>
+            <button type="submit"><img alt="" srcset="./img/arrow-right.png 2x"></button>
+          </form>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-left">
+            <a href="#" class="logoft"><img srcset="./img/logo-white.png 2x"></a>
+             <p class="copyright">© 2019 - Luxestate,<br>
+All Right Reserved</p> 
+            </div>
+            <div class="footer__bottom-right">
+              <div class="submenu">
+                <p class="submenu__title">LUXSTATE</p>
+                <ul class="submenu_list">
+                  <li><a href="#">Agents</a></li>
+                  <li><a href="#">Hunters</a></li>
+                </ul>
+              </div>
+                <div class="submenu">
+                <p class="submenu__title">COMPANY</p>
+                <ul  class="submenu_list">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">FAQ</a></li>  
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Social</a></li>
+                </ul>
+              </div>
+                <div class="submenu">
+                <p class="submenu__title">PRODUCT</p>
+                <ul  class="submenu_list">
+                  <li><a href="#">Apartments</a></li>
+                  <li><a href="#">How It Works</a></li>
+                </ul>
+              </div>
+                <div class="submenu">
+                <p class="submenu__title">SERVICES</p>
+                <ul  class="submenu_list">
+                  <li><a href="#">Renting</a></li>
+                  <li><a href="#">Selling</a></li>
+                  <li><a href="#">Building</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+      <button class="btntotop --btn-yellow">Scroll To Top</button>
+    </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>
