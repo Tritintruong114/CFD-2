@@ -109,8 +109,10 @@ img {
 
 /* Header */
 .header {
+  position: -webkit-sticky;
   height: 94px;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 3;
   background: var(--white-cl);
   transition: 0.9s;
